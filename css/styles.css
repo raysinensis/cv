@@ -123,3 +123,16 @@ sup {
   margin: 0.5rem;
   box-shadow: 1px 1px 4px black;
 }
+
+@page :left {
+  @bottom-center {
+    content: counter(page);
+    font-size: 0.75rem;
+  }
+}
+@page :right {
+  @bottom-center {
+    content: counter(page);
+    font-size: 0.75rem;
+  }
+}
