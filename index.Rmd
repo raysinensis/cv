@@ -37,7 +37,7 @@ sheet_is_publicly_readable <- TRUE
 # Is the goal of this knit to build a document that is exported to PDF? If so
 # set this to true to have links turned into footnotes at the end of the
 # document
-PDF_EXPORT <- TRUE
+PDF_EXPORT <- FALSE
 
 
 CV_PDF_LOC <- "https://github.com/raysinensis/cv/raw/master/ruifu_cv.pdf"
@@ -101,6 +101,10 @@ Rui Fu {#title}
 --------------------------------------------------------------------------------
 
 ```{r}
+print_text_block(text_blocks, 'header')
+```
+
+```{r}
 print_text_block(text_blocks, 'intro')
 ```
 
@@ -112,7 +116,6 @@ Education {data-icon=graduation-cap data-concise=true}
 ```{r}
 print_section(position_data, 'education')
 ```
-
 
 
 Research Experience {data-icon=laptop}
@@ -128,12 +131,17 @@ print_text_block(text_blocks, 'research_experience_aside')
 print_section(position_data, 'research_positions')
 ```
 
-Teaching Experience {data-icon=chalkboard-teacher}
+<!-- These breaks just force a new page so section doesnt get cut off -->
+<!-- <br> -->
+<!-- <br> -->
+<!-- <br> -->
+
+Teaching Experience {data-icon=chalkboard-teacher data-concise=true}
 --------------------------------------------------------------------------------
 
 ::: aside
 ```{r}
-print_text_block(text_blocks, 'teaching_experience_aside')
+# print_text_block(text_blocks, 'teaching_experience_aside')
 ```
 :::
 
@@ -143,6 +151,12 @@ print_section(position_data, 'teaching_positions')
 
 Publications, as First Author {data-icon=book}
 --------------------------------------------------------------------------------
+
+::: aside
+```{r}
+print_text_block(text_blocks, 'academic_articles1_aside')
+```
+:::
 
 ```{r}
 print_section(position_data, 'academic_articles1')
@@ -164,6 +178,12 @@ print_section(position_data, 'poster_articles')
 
 Service, Training, Recognition  {data-icon=chart-line}
 --------------------------------------------------------------------------------
+
+::: aside
+```{r}
+print_text_block(text_blocks, 'other_articles_aside')
+```
+:::
 
 ```{r}
 print_section(position_data, 'other_articles')
