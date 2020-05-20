@@ -109,7 +109,6 @@ print_text_block(text_blocks, 'intro')
 ```
 
 
-
 Education {data-icon=graduation-cap data-concise=true}
 --------------------------------------------------------------------------------
 
@@ -118,7 +117,7 @@ print_section(position_data, 'education')
 ```
 
 
-Research Experience {data-icon=laptop}
+Research Experience {data-icon=vial}
 --------------------------------------------------------------------------------
 
 ::: aside
@@ -141,7 +140,7 @@ Teaching Experience {data-icon=chalkboard-teacher data-concise=true}
 
 ::: aside
 ```{r}
-# print_text_block(text_blocks, 'teaching_experience_aside')
+print_text_block(text_blocks, 'teaching_experience_aside')
 ```
 :::
 
@@ -176,7 +175,7 @@ Posters and Talks {data-icon=chart-line}
 print_section(position_data, 'poster_articles')
 ```
 
-Service, Training, Recognition  {data-icon=chart-line}
+Service, Training, Recognition  {data-icon=award}
 --------------------------------------------------------------------------------
 
 ::: aside
@@ -211,8 +210,8 @@ Links {data-icon=link}
 Disclaimer {#disclaimer}
 --------------------------------------------------------------------------------
 
-Made with [**pagedown**](https://github.com/rstudio/pagedown). 
+Made with [pagedown](https://github.com/rstudio/pagedown). 
 
-[github.com/raysinensis/cv](https://github.com/raysinensis/cv).
+Code at [github.com/raysinensis/cv](https://github.com/raysinensis/cv).
 
 Last updated on `r Sys.Date()`.
