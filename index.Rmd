@@ -188,8 +188,14 @@ print_text_block(text_blocks, 'other_articles_aside')
 print_section(position_data, 'other_articles')
 ```
 
-Science Outreach  {data-icon=fish}
+Science Outreach  {data-icon=fish }
 --------------------------------------------------------------------------------
+
+::: aside
+```{r}
+print_text_block(text_blocks, 'outreach_aside')
+```
+:::
 
 ```{r}
 print_section(position_data, 'outreach')
