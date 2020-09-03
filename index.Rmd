@@ -175,7 +175,7 @@ Posters and Talks {data-icon=chart-area}
 print_section(position_data, 'poster_articles')
 ```
 
-Service, Training, Recognition  {data-icon=award}
+Service  {data-icon=bullhorn}
 --------------------------------------------------------------------------------
 
 ::: aside
@@ -185,10 +185,18 @@ print_text_block(text_blocks, 'other_articles_aside')
 :::
 
 ```{r}
+print_section(position_data, 'other_serve')
+```
+
+Recognition and Training {data-icon=award}
+--------------------------------------------------------------------------------
+
+
+```{r}
 print_section(position_data, 'other_articles')
 ```
 
-Science Outreach  {data-icon=fish }
+Science Outreach  {data-icon=fish}
 --------------------------------------------------------------------------------
 
 ::: aside
