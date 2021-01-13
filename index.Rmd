@@ -178,7 +178,7 @@ Posters and Talks {data-icon=chart-area}
 print_section(position_data, 'poster_articles')
 ```
 
-Service  {data-icon=bullhorn}
+Professional Service  {data-icon=bullhorn}
 --------------------------------------------------------------------------------
 
 ::: aside
@@ -191,9 +191,15 @@ print_text_block(text_blocks, 'other_articles_aside')
 print_section(position_data, 'other_serve')
 ```
 
-Recognition and Training {data-icon=award}
+Diversity, Equity, and Inclusion Service {data-icon=handshake-o}
 --------------------------------------------------------------------------------
 
+```{r}
+print_section(position_data, 'other_div')
+```
+
+Recognition and Training {data-icon=award}
+--------------------------------------------------------------------------------
 
 ```{r}
 print_section(position_data, 'other_articles')
