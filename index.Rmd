@@ -151,6 +151,13 @@ print_text_block(text_blocks, 'teaching_experience_aside')
 print_section(position_data, 'teaching_positions')
 ```
 
+Mentoring Experience {data-icon=user-friends data-concise=true}
+--------------------------------------------------------------------------------
+
+```{r}
+print_section(position_data, 'ment_positions')
+```
+
 Publications, as First Author {data-icon=user-edit}
 --------------------------------------------------------------------------------
 
