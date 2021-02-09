@@ -140,3 +140,11 @@ sup {
 img {
   margin-top: -1.25in;
 }
+
+/* Hyphens */
+p {
+ -webkit-hyphens: manual !important;
+    -moz-hyphens: manual !important;
+     -ms-hyphens: manual !important;
+         hyphens: manual !important;
+}

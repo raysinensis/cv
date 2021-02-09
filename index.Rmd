@@ -148,7 +148,7 @@ print_text_block(text_blocks, 'teaching_experience_aside')
 :::
 
 ```{r}
-print_section(position_data, 'teaching_positions')
+print_section_nodate(position_data, 'teaching_positions')
 ```
 
 Mentoring Experience {data-icon=user-friends data-concise=true}
@@ -158,7 +158,7 @@ Mentoring Experience {data-icon=user-friends data-concise=true}
 print_section(position_data, 'ment_positions')
 ```
 
-Publications, as First Author {data-icon=user-edit}
+Publications, as First or Corresp. Author {data-icon=user-edit}
 --------------------------------------------------------------------------------
 
 ::: aside
