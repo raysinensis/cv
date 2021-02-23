@@ -133,31 +133,6 @@ print_text_block(text_blocks, 'research_experience_aside')
 print_section(position_data, 'research_positions')
 ```
 
-<!-- These breaks just force a new page so section doesnt get cut off -->
-<!-- <br> -->
-<!-- <br> -->
-<!-- <br> -->
-
-Teaching Experience {data-icon=chalkboard-teacher data-concise=true}
---------------------------------------------------------------------------------
-
-::: aside
-```{r}
-print_text_block(text_blocks, 'teaching_experience_aside')
-```
-:::
-
-```{r}
-print_section_nodate(position_data, 'teaching_positions')
-```
-
-Mentoring Experience {data-icon=user-friends data-concise=true}
---------------------------------------------------------------------------------
-
-```{r}
-print_section(position_data, 'ment_positions')
-```
-
 Publications, as First or Corresp. Author {data-icon=user-edit}
 --------------------------------------------------------------------------------
 
@@ -183,6 +158,37 @@ Posters and Talks {data-icon=chart-area}
 
 ```{r}
 print_section(position_data, 'poster_articles')
+```
+
+<!-- These breaks just force a new page so section doesnt get cut off -->
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+
+Teaching Experience {data-icon=chalkboard-teacher data-concise=true}
+--------------------------------------------------------------------------------
+
+::: aside
+```{r}
+print_text_block(text_blocks, 'teaching_experience_aside')
+```
+:::
+
+```{r}
+print_section_nodate(position_data, 'teaching_positions')
+```
+
+Mentoring Experience {data-icon=user-friends data-concise=true}
+--------------------------------------------------------------------------------
+
+```{r}
+print_section(position_data, 'ment_positions')
 ```
 
 Professional Service  {data-icon=bullhorn}
