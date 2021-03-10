@@ -133,6 +133,9 @@ print_text_block(text_blocks, 'research_experience_aside')
 print_section(position_data, 'research_positions')
 ```
 
+<!-- These breaks just force a new page so section doesnt get cut off -->
+<br>
+
 Publications, as First or Corresp. Author {data-icon=user-edit}
 --------------------------------------------------------------------------------
 
@@ -160,15 +163,6 @@ Posters and Talks {data-icon=chart-area}
 print_section(position_data, 'poster_articles')
 ```
 
-<!-- These breaks just force a new page so section doesnt get cut off -->
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-
 Teaching Experience {data-icon=chalkboard-teacher data-concise=true}
 --------------------------------------------------------------------------------
 
@@ -188,6 +182,10 @@ Mentoring Experience {data-icon=user-friends data-concise=true}
 ```{r}
 print_section(position_data, 'ment_positions')
 ```
+
+<!-- These breaks just force a new page so section doesnt get cut off -->
+<br>
+<br>
 
 Professional Service  {data-icon=bullhorn}
 --------------------------------------------------------------------------------
@@ -215,6 +213,10 @@ Recognition and Training {data-icon=award}
 ```{r}
 print_section(position_data, 'other_articles')
 ```
+
+<!-- These breaks just force a new page so section doesnt get cut off -->
+<br>
+<br>
 
 Science Outreach  {data-icon=fish}
 --------------------------------------------------------------------------------
