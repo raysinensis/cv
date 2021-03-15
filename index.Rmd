@@ -120,7 +120,7 @@ print_section(position_data, 'education')
 ```
 
 
-Research Experience {data-icon=vial}
+Research Experience {data-icon=vial data-concise=true}
 --------------------------------------------------------------------------------
 
 ::: aside
@@ -134,7 +134,7 @@ print_section(position_data, 'research_positions')
 ```
 
 <!-- These breaks just force a new page so section doesnt get cut off -->
-<br>
+<!-- <br> -->
 
 Publications, as First or Corresp. Author {data-icon=user-edit}
 --------------------------------------------------------------------------------
@@ -163,7 +163,7 @@ Posters and Talks {data-icon=chart-area}
 print_section(position_data, 'poster_articles')
 ```
 
-Teaching Experience {data-icon=chalkboard-teacher data-concise=true}
+Teaching Experience {data-icon=chalkboard-teacher}
 --------------------------------------------------------------------------------
 
 ::: aside
@@ -176,7 +176,7 @@ print_text_block(text_blocks, 'teaching_experience_aside')
 print_section_nodate(position_data, 'teaching_positions')
 ```
 
-Mentoring Experience {data-icon=user-friends data-concise=true}
+Mentoring Experience {data-icon=user-friends}
 --------------------------------------------------------------------------------
 
 ```{r}
@@ -184,8 +184,8 @@ print_section(position_data, 'ment_positions')
 ```
 
 <!-- These breaks just force a new page so section doesnt get cut off -->
-<br>
-<br>
+<!-- <br> -->
+<!-- <br> -->
 
 Professional Service  {data-icon=bullhorn}
 --------------------------------------------------------------------------------
@@ -215,8 +215,8 @@ print_section(position_data, 'other_articles')
 ```
 
 <!-- These breaks just force a new page so section doesnt get cut off -->
-<br>
-<br>
+<!-- <br> -->
+<!-- <br> -->
 
 Science Outreach  {data-icon=fish}
 --------------------------------------------------------------------------------

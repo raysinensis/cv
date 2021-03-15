@@ -44,12 +44,22 @@ sup {
 }
 
 .details .place {
-  margin-top: 0.25rem;
+  margin-top: 0.22rem;
+  margin-bottom: 0.22rem;
+}
+
+.details ul {
+  padding-bottom: 0rem;
+  padding-top 100px;
+  margin-bottom: -2.5px;
 }
 
 .main-block:not(.concise) .details div {
-  padding-top: 0.005rem;
+  padding-top: 0.0rem;
+  margin-top -2px;
+  margin-bottom: -1.5px;
 }
+
 
 /* Laptop icon isn't centered by default which is lame */
 .fa-laptop {
