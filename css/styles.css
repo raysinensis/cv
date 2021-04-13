@@ -60,6 +60,10 @@ sup {
   margin-bottom: -1.5px;
 }
 
+strong {
+  font-weight: 1900;
+  text-shadow: 0px 0.2px, 0.2px 0px, 0.2px 0.2px;
+}
 
 /* Laptop icon isn't centered by default which is lame */
 .fa-laptop {
@@ -157,4 +161,11 @@ p {
     -moz-hyphens: manual !important;
      -ms-hyphens: manual !important;
          hyphens: manual !important;
+}
+
+.pagedjs_page:not(:first-of-type) {
+  --sidebar-width: 0rem;
+  --sidebar-background-color: #ffffff;
+  --main-width: calc(var(--content-width) - var(--sidebar-width));
+  --decorator-horizontal-margin: 0.2in;
 }
