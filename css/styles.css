@@ -163,7 +163,36 @@ p {
          hyphens: manual !important;
 }
 
-.pagedjs_page:not(:first-of-type) {
+@page :nth(2){
+  --background:white;
+  --sidebar-width: 0rem;
+  --sidebar-background-color: #ffffff;
+  --main-width: calc(var(--content-width) - var(--sidebar-width));
+  --decorator-horizontal-margin: 0.2in;
+}
+@page :nth(3){
+  --background:white;
+  --sidebar-width: 0rem;
+  --sidebar-background-color: #ffffff;
+  --main-width: calc(var(--content-width) - var(--sidebar-width));
+  --decorator-horizontal-margin: 0.2in;
+}
+@page :nth(4){
+  --background:white;
+  --sidebar-width: 0rem;
+  --sidebar-background-color: #ffffff;
+  --main-width: calc(var(--content-width) - var(--sidebar-width));
+  --decorator-horizontal-margin: 0.2in;
+}
+@page :nth(5){
+  --background:white;
+  --sidebar-width: 0rem;
+  --sidebar-background-color: #ffffff;
+  --main-width: calc(var(--content-width) - var(--sidebar-width));
+  --decorator-horizontal-margin: 0.2in;
+}
+@page :nth(6){
+  --background:white;
   --sidebar-width: 0rem;
   --sidebar-background-color: #ffffff;
   --main-width: calc(var(--content-width) - var(--sidebar-width));
