@@ -4,7 +4,7 @@ author: Rui Fu
 date: "`r Sys.Date()`"
 output:
   pagedown::html_resume:
-    css: ['css/styles.css', 'resume']
+    css: ['css/resume.css', 'css/styles.css']
     # set it to true for a self-contained HTML page but it'll take longer to render
     self_contained: true
 ---
@@ -228,7 +228,7 @@ print_text_block(text_blocks, 'outreach_aside')
 :::
 
 ```{r}
-print_section(position_data, 'outreach')
+print_section_nodate(position_data, 'outreach')
 ```
 
 
