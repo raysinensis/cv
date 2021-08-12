@@ -200,7 +200,7 @@ print_text_block(text_blocks, 'other_articles_aside')
 print_section(position_data, 'other_train')
 ```
 
-Diversity, Equity, and Inclusion Service {data-icon=handshake-o}
+Diversity, Equity, and Inclusion {data-icon=handshake-o}
 --------------------------------------------------------------------------------
 
 ```{r}
