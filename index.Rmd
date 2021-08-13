@@ -207,7 +207,7 @@ Diversity, Equity, and Inclusion {data-icon=handshake-o}
 print_section(position_data, 'other_div')
 ```
 
-Recognition {data-icon=award}
+Recognition and Funding {data-icon=award}
 --------------------------------------------------------------------------------
 
 ```{r}
