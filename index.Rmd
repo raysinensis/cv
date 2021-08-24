@@ -231,6 +231,12 @@ print_text_block(text_blocks, 'outreach_aside')
 print_section_nodate(position_data, 'outreach')
 ```
 
+References {data-icon=envelope}
+--------------------------------------------------------------------------------
+
+```{r}
+print_section_nodate(position_data, 'ref')
+```
 
 ```{r}
 if(PDF_EXPORT){
