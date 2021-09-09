@@ -4,7 +4,7 @@ author: Rui Fu
 date: "`r Sys.Date()`"
 output:
   pagedown::html_resume:
-    css: ['css/resume.css', 'css/styles.css']
+    css: ['css/resume.css', 'css/styles.css', 'css/academicons.css']
     # set it to true for a self-contained HTML page but it'll take longer to render
     self_contained: true
 ---
@@ -94,7 +94,7 @@ Contact {#contact}
 
 ```{r}
 contact_info %>% 
-  glue_data("- <i class='fa fa-{icon}'></i> {contact}")
+  glue_data("- <i class='fa fa-{icon}'></i> {contact}") #%>% str_replace("fa fa-google", "ai ai-google-scholar")
 ```
 
 Main
@@ -259,7 +259,7 @@ Links {data-icon=link}
 Disclaimer {#disclaimer}
 --------------------------------------------------------------------------------
 
-Made with [pagedown](https://github.com/rstudio/pagedown). 
+Generated with [pagedown](https://github.com/rstudio/pagedown). 
 
 Code at [github.com/raysinensis/cv](https://github.com/raysinensis/cv).
 
