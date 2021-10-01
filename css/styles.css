@@ -52,8 +52,8 @@ sup {
 
 .main-block:not(.concise) .details div {
   padding-top: 0.0rem;
-  margin-top: -2.5px;
-  margin-bottom: -2.5px;
+  margin-top: -5px;
+  margin-bottom: -5px;
 }
 
 strong {

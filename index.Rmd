@@ -156,6 +156,13 @@ Publications, as Contributing Author {data-icon=book}
 print_section(position_data, 'academic_articlesCO')
 ```
 
+Recognition and Funding {data-icon=award}
+--------------------------------------------------------------------------------
+
+```{r}
+print_section(position_data, 'other_articles')
+```
+
 Posters and Presentations {data-icon=chart-area}
 --------------------------------------------------------------------------------
 
@@ -187,6 +194,13 @@ print_section(position_data, 'ment_positions')
 <!-- <br> -->
 <!-- <br> -->
 
+Diversity, Equity, and Inclusion {data-icon=handshake-o}
+--------------------------------------------------------------------------------
+
+```{r}
+print_section(position_data, 'other_div')
+```
+
 Service and Training  {data-icon=bullhorn}
 --------------------------------------------------------------------------------
 
@@ -198,20 +212,6 @@ print_text_block(text_blocks, 'other_articles_aside')
 
 ```{r}
 print_section(position_data, 'other_train')
-```
-
-Diversity, Equity, and Inclusion {data-icon=handshake-o}
---------------------------------------------------------------------------------
-
-```{r}
-print_section(position_data, 'other_div')
-```
-
-Recognition and Funding {data-icon=award}
---------------------------------------------------------------------------------
-
-```{r}
-print_section(position_data, 'other_articles')
 ```
 
 <!-- These breaks just force a new page so section doesnt get cut off -->
