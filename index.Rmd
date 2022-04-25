@@ -77,7 +77,7 @@ if(PDF_EXPORT){
 Aside
 ================================================================================
 <p align="center">
-  <img width="111" src="https://github.com/rnabioco/squirrelbox/raw/master/www/logo.png">
+  <img width="111" src="https://storage.googleapis.com/nygc-wp-599886722202-wp-data/wp-media/nygc-logo-footer2.svg">
 </p>
 
 ```{r}
