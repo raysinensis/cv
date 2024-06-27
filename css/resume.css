@@ -380,7 +380,7 @@ h1, h2{
 
 #disclaimer{
   position: absolute;
-  bottom: 0;
+  bottom: -100;
   right: var(--sidebar-horizontal-padding);
   font-size: 0.5rem;
   font-style: italic;

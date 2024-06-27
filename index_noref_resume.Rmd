@@ -1,0 +1,187 @@
+---
+title: "Rui Fu's CV"
+author: Rui Fu
+date: "`r Sys.Date()`"
+output:
+  pagedown::html_resume:
+    css: ['css/resume.css', 'css/styles.css', 'css/academicons.css']
+    # set it to true for a self-contained HTML page but it'll take longer to render
+    self_contained: true
+---
+
+```{r, include=FALSE}
+knitr::opts_chunk$set(
+  results='asis', 
+  echo = FALSE
+)
+do_resume = TRUE
+library(glue)
+library(tidyverse)
+
+# ======================================================================
+# These variables determine how the the data is loaded and how the exports are
+# done.
+
+# Is data stored in google sheets? If no data will be gather from the csvs/
+# folder in project
+using_googlesheets <- TRUE
+
+# Just the copied URL from the sheet
+positions_sheet_loc <- "https://docs.google.com/spreadsheets/d/1wzvE55uPVgYq_kRoZmtReX35dEaLd-ApYxUNfwLXLAg"
+
+# Is this sheet available for anyone to read? If you're using a private sheet
+# set this to false and go to gather_data.R and run the data loading manually
+# once to cache authentication
+sheet_is_publicly_readable <- TRUE
+
+# Is the goal of this knit to build a document that is exported to PDF? If so
+# set this to true to have links turned into footnotes at the end of the
+# document
+PDF_EXPORT <- FALSE
+
+
+CV_PDF_LOC <- "https://github.com/raysinensis/cv/raw/master/rf_cv.pdf"
+CV_HTML_LOC <- "raysinensis.com"
+
+
+# A global (gasp) variable that holds all the links that were inserted for
+# placement at the end
+links <- c()
+
+# ======================================================================
+# Now we source two external scripts. One contains functions for building the
+# text output and the other loads up our data from either googlesheets or csvs
+
+# Functions for building sections from CSV data
+source('parsing_functions.R') 
+
+# Load data for CV/Resume
+source('gather_data.R')
+```
+
+
+
+```{r}
+# When in export mode the little dots are unaligned, so fix that. 
+if(PDF_EXPORT){
+  cat("
+  <style>
+  :root{
+    --decorator-outer-offset-left: -6.5px;
+  }
+  </style>")
+}
+```
+
+
+Aside
+================================================================================
+<p align="center">
+  <img width="150" src="/Users/rfu/Downloads/NYGC Logo.svg">
+</p>
+
+```{r}
+# When in export mode the little dots are unaligned, so fix that. 
+# if(PDF_EXPORT){
+#   glue("View this CV online with links at _{CV_HTML_LOC}_")
+# } else {
+#   glue("[<i class='fas fa-download'></i> Download a PDF of this CV]({CV_PDF_LOC})")
+# }
+```
+
+Contact {#contact}
+--------------------------------------------------------------------------------
+
+```{r}
+contact_info %>% 
+  glue_data("- <i class='fa fa-{icon}'></i> {contact}") #%>% str_replace("fa fa-google", "ai ai-google-scholar")
+```
+
+Main
+================================================================================
+
+Rui Fu {#title}
+--------------------------------------------------------------------------------
+
+```{r}
+print_text_block(text_blocks, 'header')
+```
+
+```{r}
+print_text_block(text_blocks, 'intro')
+```
+
+
+Education {data-icon=graduation-cap data-concise=true}
+--------------------------------------------------------------------------------
+
+```{r}
+print_section(position_data, 'education')
+```
+
+
+Research Experience {data-icon=vial data-concise=true}
+--------------------------------------------------------------------------------
+
+::: aside
+```{r}
+print_text_block(text_blocks, 'research_experience_aside')
+```
+:::
+
+```{r}
+print_section(position_data, 'research_positions')
+```
+
+<!-- These breaks just force a new page so section doesnt get cut off -->
+<!-- <br> -->
+
+Publications, as First or Corresp. Author {data-icon=user-edit}
+--------------------------------------------------------------------------------
+
+::: aside
+```{r}
+print_text_block(text_blocks, 'academic_articles1_aside')
+```
+:::
+
+```{r}
+print_section(position_data, 'academic_articles1')
+```
+
+Recognition and Funding {data-icon=award}
+--------------------------------------------------------------------------------
+
+```{r}
+print_section(position_data, 'other_articles')
+```
+
+Mentoring Experience {data-icon=user-friends}
+--------------------------------------------------------------------------------
+
+```{r}
+print_section_nodate(position_data, 'ment_positions')
+```
+
+<!-- These breaks just force a new page so section doesnt get cut off -->
+<!-- <br> -->
+<!-- <br> -->
+
+```{r}
+if(PDF_EXPORT){
+  cat("
+  
+Links {data-icon=link}
+--------------------------------------------------------------------------------
+
+<br>
+
+
+")
+  
+  walk2(links, 1:length(links), function(link, index){
+    print(glue('{index}. {link}'))
+  })
+}
+```
+
