@@ -34,3 +34,9 @@ if(using_googlesheets){
   
 }
 
+if (do_resume) {
+  position_data <- position_data %>% filter(in_resume) %>% 
+    mutate(description_1 = ifelse(section == "academic_articles1", NA, description_1)) %>% 
+    mutate(loc = ifelse(section == "academic_articles1", str_c(title, loc, sep = ". "), loc)) %>% 
+    mutate(title = ifelse(section == "academic_articles1", NA, title))
+}
